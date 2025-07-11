@@ -13,6 +13,12 @@
 Project Structure
 
 src/
+├──Exceptions 
+
+│    ├──BookNotFound
+
+│    ├──NotAvailableQuantity
+
 ├── Model
 
 │    ├── Book
@@ -38,7 +44,8 @@ src/
 
 
 Example Run
-Managers are only allowed 
+
+Managers are only allowed
 
 Enter the number of years to remove the books that you are outdated
 
@@ -46,9 +53,9 @@ Enter the number of years to remove the books that you are outdated
 
 Available Books
 
-Java Basics 
+cpp Basics 
 
-Ancient Manuscripts 
+Learn AI 
 
 ===============================
 
@@ -64,11 +71,11 @@ Menoufia
 
 which book do you want
 
-Java Basics
+cpp Basics
 
 Quantity : 2
 
-book store: Shipping paper book to Menoufia
+book store: Shipping cpp Basics book to salma@gmail.com
 
 ....................................
 
@@ -78,9 +85,9 @@ yes
 
 which book do you want
 
-cpp Basics
+Java Basics
 
-Quantity : 1
+Quantity : 5
 
 NOt found
 
@@ -92,7 +99,21 @@ yes
 
 which book do you want
 
-java Basics
+learn Ai
+
+Quantity : 1
+
+book store: Shipping Learn AI book to Menoufia
+
+....................................
+
+Do you want to buy more Yes/NO
+
+yes
+
+which book do you want
+
+cpp basics
 
 Quantity : 9
 
@@ -104,6 +125,4 @@ Do you want to buy more Yes/NO
 
 no
 
-paid amount is : 200.0
-
-    
+paid amount is : 370.0
