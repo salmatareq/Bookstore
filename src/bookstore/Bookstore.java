@@ -1,5 +1,7 @@
 
 package bookstore;
+import Exceptions.BookNotFound;
+import Exceptions.NotAvailableQuantity;
 import java.util.*;
 import Model.Book;
 import Model.DemoBook;
@@ -47,8 +49,13 @@ public class Bookstore {
         String bName=input.nextLine();
         System.out.print("Quantity : ");
         int Q=input.nextInt();
-      paidAmount+=store.buyBook(bName, Q, email,Address);
-   
+        try{
+      paidAmount+=store.buyBook(bName, Q, email,Address);}
+   catch (BookNotFound e) {
+    System.out.println(e.getMessage()); 
+}catch (NotAvailableQuantity e) {
+    System.out.println(e.getMessage());
+}
             System.out.println("....................................");
             System.out.println("Do you want to buy more Yes/NO");
            input.nextLine();

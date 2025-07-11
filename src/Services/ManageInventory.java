@@ -1,5 +1,7 @@
 
 package Services;
+import Exceptions.BookNotFound;
+import Exceptions.NotAvailableQuantity;
 import Model.Book;
 import Model.paperBook;
 import java.time.Year;
@@ -14,7 +16,7 @@ public class ManageInventory {
        
     }
     
-    public double buyBook(String name ,int quantity,String email,String address){
+    public double buyBook(String name ,int quantity,String email,String address) throws BookNotFound, NotAvailableQuantity{
         paidAmount=0;
         for(Book book:inventory){
         if(book.getName().equalsIgnoreCase(name))
@@ -30,10 +32,10 @@ public class ManageInventory {
                 paidAmount+=book.getPrice()*quantity;
                 return paidAmount;
                 }
-                else {
-                    System.out.println("quantity is not available");
+               
+                  
+                  throw new NotAvailableQuantity("quantity is not available");  
                     
-                    break;}
             }
             else {
             
@@ -50,12 +52,12 @@ public class ManageInventory {
         else 
         { System.out.println(book.getName()+" is not for sale");return 0;}
         
-        }
-        else {System.out.println("NOt found");return 0;}
+        }}
+           throw new BookNotFound("NOt found");
     
-}
+
     
-    return 0;
+    
     
     }
     
@@ -67,8 +69,8 @@ public class ManageInventory {
     {
       if(currentYear-b.getYear()>=past_year){
         deletedBooks.add(b);
-        remainingBooks.add(b);
-      }
+       
+      }else  remainingBooks.add(b);
     
     }
      inventory=remainingBooks;
