@@ -1,9 +1,9 @@
 "# Bookstore" 
 
 - Add different types of books:
-  - 📦 Paper Books (with stock & shipping)
-  - 💾 EBooks (with file type & email delivery)
-  - 🔍 Showcase Books (not for sale)
+  - Paper Books (with stock & shipping)
+  - EBooks (with file type & email delivery)
+  - Showcase Books (not for sale)
 - Buy books using ISBN, email, and address
 - Automatically reduce stock when buying paper books
 - Send books through dummy services (Mail & Shipping)
