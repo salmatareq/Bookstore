@@ -15,22 +15,22 @@ Project Structure
 src/
 ├── Model
 
-│ ├── Book
+│    ├── Book
 
-│ ├── PaperBook
+│    ├── PaperBook
 
-│ ├── EBook
+│    ├── EBook
 
-│ └── DemoBook
+│    └── DemoBook
 
 │
 ├── service
 
-│ └── ManageInventory
+│   └── ManageInventory
 │
 ├── bookstore
 
-│ └── BookStore (main)
+│   └── BookStore (main)
 
 
 Example Run
