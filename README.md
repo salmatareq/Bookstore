@@ -13,21 +13,17 @@
 Project Structure
 
 src/
-├──Model
-   ├── Book
-   
-   ├── PaperBook
-   
-   ├── EBook
-   
-   ├── DemoBook
-   
+├── Model
+│ ├── Book
+│ ├── PaperBook
+│ ├── EBook
+│ └── DemoBook
+│
 ├── service
-
-   ├──ManageInventory
-   
+│ └── ManageInventory
+│
 ├── bookstore
-     ├──BookStore(main)
+│ └── BookStore (main)
 
 Example Run
 Managers are only allowed 
