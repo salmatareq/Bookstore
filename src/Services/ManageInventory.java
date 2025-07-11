@@ -26,7 +26,7 @@ public class ManageInventory {
                 if(pb.getQuantity()>=quantity)
                 {pb.setStock(quantity);
                 
-                pb.deliver(email, address);
+                ShippingService.deliver(email, pb);
                 paidAmount+=book.getPrice()*quantity;
                 return paidAmount;
                 }
@@ -37,7 +37,7 @@ public class ManageInventory {
             }
             else {
             
-                  book.deliver(email, address);
+                  Mailservice.deliver(address,book);
                   
             paidAmount+=book.getPrice();
             return paidAmount;

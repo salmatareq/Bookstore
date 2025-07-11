@@ -32,10 +32,7 @@ String fileType;
     public String getISBN() {
        return ISBN;
     }
-    @Override
-   public void deliver(String email, String address) {
-        System.out.println("book store: Shipping paper book to " + email);
-     }
+    
      @Override
     public int getYear() {
    return this.Publishing_year;    }

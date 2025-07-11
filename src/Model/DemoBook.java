@@ -33,9 +33,7 @@ public class DemoBook extends Book{
        return ISBN;
     }
 
-    @Override
-    public void deliver(String email, String address) {
-    }
+  
     @Override
     public int getYear() {
    return this.Publishing_year;    }

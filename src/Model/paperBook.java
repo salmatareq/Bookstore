@@ -2,7 +2,7 @@
 package Model;
 
 
-public class paperBook extends Book  {
+public class paperBook extends Book {
 
    public int stock;
    public paperBook(String ISBN,String title,double price,int year,int stock){
@@ -40,10 +40,7 @@ stock-=x;
     public String getISBN() {
        return ISBN;
     }
-     @Override
-   public void deliver(String email, String address) {
-        System.out.println("book store: Shipping paper book to " + address);
-     }
+   
 
     @Override
     public int getYear() {

@@ -14,6 +14,6 @@ abstract public class Book {
      abstract public String getName();
       abstract public String getISBN();
        abstract public int getYear();
-   abstract public void deliver(String email, String address);
+   
    abstract public double getPrice();
 }
