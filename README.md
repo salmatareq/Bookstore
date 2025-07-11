@@ -27,7 +27,10 @@ src/
 ├── service
 
 │   └── ManageInventory
-│
+
+│   ├──ShippingService
+
+│   ├──Mailservice
 
 ├── bookstore
 
